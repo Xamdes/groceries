@@ -8,7 +8,27 @@
     <script src="js/scripts.js"></script>
     <title>Groceries</title>
   </head>
-  <body class="container-fluid">
-    <h1 class="center-text">Grocery Store</h1>
+  <body class="container-fluid center-text">
+    <h1 class="jumbotron">Grocery Store</h1>
+    <button id="btn-submit" class="btn">Submit List</button>
+    <br>
+    <button id="btn-add" class="btn">Add to List</button>
+    <br>
+    <div id="submit-form" class="format-center-left">
+      <form class="panel panel-info format-center-left" action="index.html" method="post">
+        <label for="input">Item: </label>
+        <input id="input" type="text">
+      </form>
+      <br>
+      <ul id="grocery-list" class="panel panel-info">
+        <h5>Grocery List</h5>
+      </ul>
+    </div>
+    <br>
+    <div id="organized-list"class="initial-hide panel panel-info format-center-left">
+      <ul id="list">
+
+      </ul>
+    </div>
   </body>
 </html>

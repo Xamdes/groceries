@@ -7,3 +7,14 @@ body {
 .center-text {
   text-align: center;
 }
+
+.initial-hide {
+  display: none;
+}
+
+.format-center-left  {
+  display: inline-block;
+  width: 250px;
+  padding: 6px;
+  text-align: left;
+}
