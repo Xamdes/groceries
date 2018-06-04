@@ -21,16 +21,18 @@ $(function(){
     $("#grocery-list").text("");
     $("#list").text("");
     $("#unsorted-list").hide();
-    listOfItems.sort();
-    listOfSortedItems = [];
-    listOfItems.forEach(function(item)
+    var tempArray = listOfItems.map(function(item)
     {
-      item = wrapListTag(item.toUpperCase());
-      listOfSortedItems.push(item);
+      return item.toUpperCase();
     });
+    listOfItems = [];
+    listOfSortedItems.sort();
+    listOfSortedItems = tempArray.map(function(item){
+      return wrapListTag(item);
+    })
     $("#list").append(listOfSortedItems);
     $("#sorted-list").fadeIn();
-    listOfItems = [];
+
 
   });
 
