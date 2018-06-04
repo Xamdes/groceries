@@ -2,11 +2,11 @@ var listOfItems = [];
 var listOfSortedItems = [];
 
 $(function(){
-  $("#organized-list").hide();
+  $("#sorted-list").hide();
   $("#btn-add").click(function(event){
     event.preventDefault();
-    $("#grocery-list").fadeIn();
-    $("#organized-list").fadeOut();
+    $("#unsorted-list").fadeIn();
+    $("#sorted-list").fadeOut();
     var input = $("input").val();
     input = input.trim();
     if(input!="")
@@ -20,7 +20,7 @@ $(function(){
     event.preventDefault();
     $("#grocery-list").text("");
     $("#list").text("");
-    $("#grocery-list").hide();
+    $("#unsorted-list").hide();
     listOfItems.sort();
     listOfSortedItems = [];
     listOfItems.forEach(function(item)
@@ -29,7 +29,7 @@ $(function(){
       listOfSortedItems.push(item);
     });
     $("#list").append(listOfSortedItems);
-    $("#organized-list").fadeIn();
+    $("#sorted-list").fadeIn();
     listOfItems = [];
 
   });

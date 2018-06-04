@@ -18,3 +18,11 @@ body {
   padding: 6px;
   text-align: left;
 }
+
+.btn-color-red {
+  background-color: lightgreen;
+}
+
+.formmating {
+  margin: 6px;
+}

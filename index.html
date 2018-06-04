@@ -10,25 +10,26 @@
   </head>
   <body class="container-fluid center-text">
     <h1 class="jumbotron">Grocery Store</h1>
-    <button id="btn-submit" class="btn">Submit List</button>
-    <br>
-    <button id="btn-add" class="btn">Add to List</button>
-    <br>
+    <div class="panel panel-info">
+      <button id="btn-submit" class="btn btn-color-red">Submit List</button>
+      <br>
+      <button id="btn-add" class="btn btn-color-red">Add to List</button>
+    </div>
     <div id="submit-form" class="format-center-left">
       <form class="panel panel-info format-center-left" action="index.html" method="post">
         <label for="input">Item: </label>
         <input id="input" type="text">
       </form>
       <br>
-      <ul id="grocery-list" class="panel panel-info">
+      <div id="unsorted-list"class="panel panel-info format-center-left">
         <h5>Grocery List</h5>
-      </ul>
+        <ul id="grocery-list"></ul>
+      </div>
     </div>
     <br>
-    <div id="organized-list"class="initial-hide panel panel-info format-center-left">
-      <ul id="list">
-
-      </ul>
+    <div id="sorted-list"class="initial-hide panel panel-info format-center-left">
+      <h5>Grocery List</h5>
+      <ul id="list"></ul>
     </div>
   </body>
 </html>
